@@ -11,6 +11,17 @@
     <title>Donate</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <style type="text/css">
+    	#bg2 
+{
+  background:red;
+}
+
+#bg1
+{
+  background-image: url(drawing.png);
+}
+    </style>
 </head>
 
 <body >
@@ -40,29 +51,19 @@
       </div>
     </nav>
 
-    <!-- Full Page Image Background Carousel Header -->
+    <!-- dfljsdfj -->
     <div id="myCarousel" class="carousel slide" data-interval="false">
         <!-- Indicators -->
         
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
-            <div class="item active" >
+            <div class="item active " >
                 <!-- Set the first background image using inline CSS below.--> 
-                <div class="fill" style="background-image:url('drawing.png');  ">
-                	
-
-
-
-
-<!--DIVISION HOME-->
-
-
-
-
+                <div class="fill " id="first" style="background-image:url('drawing.png');  ">
                 </div>
                 <div class="carousel-caption">
-                    <h2>Home Page                   .</h2>
+                    <h2>Home Page.</h2>
                 </div>
             </div>
             
@@ -107,6 +108,33 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
+    /* JavaScript Media Queries */
+if (matchMedia) {
+	const mq = window.matchMedia("(max-width: 550px)");
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+	if(mq.matches)
+	{
+		$('#first').css('background', '#FCDF15');
+	}
+	else
+	{
+		$('#first').attr("style","background-image:url('drawing.png')");
+		
+	}
+
+}
+
+
+// in JS
+// based on value of imageUrl, determine what class to remove and what class to add.
+
+   
     $('.carousel').carousel({
         interval: false,
         pause:true //changes the speed
