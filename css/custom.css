@@ -9,6 +9,13 @@ body {
     height: 100%;
 }
 
+ .responsive-image {
+  margin-left: 47%;
+  margin-top: 10%;
+  height: auto;
+  width: 50%;
+}
+
 .carousel,
 .item,
 .active {
@@ -183,6 +190,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   
+ 
   #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -283,6 +291,7 @@ footer {
 
 @media screen and (max-width: 650px) {
 
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -380,4 +389,33 @@ footer {
     height: auto !important;
 }
 
+
 }
+@media screen and (max-width: 550px)
+{
+
+ .responsive-image {
+  margin-right: 0px;
+  margin-left:0px;
+  margin-top: 20%;
+  height: auto;
+  width: 100%;
+}
+}
+.donButton
+ 
+ {
+   width: 0; height: 0; border-top: 50px solid transparent; border-left: 100px solid red; border-bottom: 50px solid transparent;
+    cursor:pointer;
+    border:none;
+ }
+ .donButton:hover
+ 
+ {
+
+margin-bottom: px;
+
+   width: 0; height: 0; border-top: 50px solid transparent; border-left: 100px solid yellow; border-bottom: 50px solid transparent;
+    cursor:pointer;
+    border:none;
+ } 
